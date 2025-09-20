@@ -10,8 +10,11 @@ dist/
 build/
 .eggs/
 
+# Node
+node_modules
+
 # Virtual env
-venv/
+venv-gourmet/
 ENV/
 env/
 .venv/
@@ -20,6 +23,7 @@ env/
 *.log
 *.pot
 *.pyc
+*.sqlite3
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
