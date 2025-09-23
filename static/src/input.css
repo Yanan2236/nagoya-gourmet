@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+@source "../../templates/**/*.html";
+@source "../../restaurants/templates/**/*.html";
+
+
