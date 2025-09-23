@@ -1,0 +1,32 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}NAGOYAMESHI{% endblock %}</title>
+    <link href="{% static 'css/output.css' %}" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>NAGOYAMESHI</h1>
+        <nav class="bg-gray-100 p-4">
+            <ul class="flex space-x-6 list-none p-0 m-0">
+                <li><a href="#" class="text-gray-700 hover:text-blue-500">探す</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-500">保存リスト</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-500">予約一覧</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-500">マイページ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+    </footer>
+</body>
+</html>
