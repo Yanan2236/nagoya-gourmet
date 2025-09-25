@@ -6,6 +6,7 @@ from .models import Restaurant
 class RestaurantListView(ListView):
     model = Restaurant
     paginate_by = 10
+    context_object_name = "restaurants"
     template_name = "restaurants/restaurants_list.html"
 
     def get_queryset(self):
