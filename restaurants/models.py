@@ -87,6 +87,15 @@ class Restaurant(BaseModel):
 
     def __str__(self): return self.name
 
+    @property
+    def category_label(self): return self.get_category_display()
+
+    @property
+    def city_label(self): return self.get_city_display()
+
+    @property
+    def ward_label(self): return self.get_ward_display()
+
     class Meta:
         indexes = [
             models.Index(fields=["category", "city"]),
